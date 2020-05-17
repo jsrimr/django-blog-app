@@ -3,16 +3,16 @@
 {% block body %}
 
 <div class="jumbotron text-center">
-        <h3>Yazılım Bilimi Bloğuna Hoşgeldiniz</h3>
-        <p>Bu blogta geliştiriciler olarak blog yazılarınızı paylaşabilirsiniz ve insanlara yardımcı olabilirsiniz.</p>
+        <h3>인사이트 블로그에 오신 것을 환영합니다</h3>
+        <p>이 블로그의 개발자는 블로그 게시물을 공유하고 사람들을 도울 수 있습니다.</p>
 </div>
 
 
 <p>
         {% if request.user.is_authenticated %}
-                Giriş Yapılmış, {{request.user.username}}
+                로그인, {{request.user.username}}
         {% else %}
-                Giriş Yapılmamış
+                로그인하지 않았습니다
         {% endif %}
 
 </p>
